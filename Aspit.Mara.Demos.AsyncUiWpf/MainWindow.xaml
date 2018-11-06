@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aspit.Mara.Demos.AsyncUiWpf"
         mc:Ignorable="d"
-        Title="Asynchronous UI" Height="200" Width="200">
+        Title="Asynchronous UI" Height="150" Width="300">
     <Grid>
     <Label x:Name="labelClock"
            Content="Label"
@@ -16,7 +16,7 @@
     <Button x:Name="button"
             Content="Start"
             HorizontalAlignment="Left"
-            Margin="106,114,0,0"
+            Margin="100,75,0,0"
             VerticalAlignment="Top"
             Width="75"
             Click="button_Click" />
