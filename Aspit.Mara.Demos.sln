@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspit.Mara.Demos.TextFiles", "Aspit.Mara.Demos.TextFiles\Aspit.Mara.Demos.TextFiles.csproj", "{BFB332C6-F9F7-428C-9B83-3A7D0FCFF3B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspit.Mara.Demos.AsyncUiWpf", "Aspit.Mara.Demos.AsyncUiWpf\Aspit.Mara.Demos.AsyncUiWpf.csproj", "{4F5E0857-B70F-44A6-8480-AD7664974583}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BFB332C6-F9F7-428C-9B83-3A7D0FCFF3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB332C6-F9F7-428C-9B83-3A7D0FCFF3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB332C6-F9F7-428C-9B83-3A7D0FCFF3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5E0857-B70F-44A6-8480-AD7664974583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5E0857-B70F-44A6-8480-AD7664974583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5E0857-B70F-44A6-8480-AD7664974583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5E0857-B70F-44A6-8480-AD7664974583}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
