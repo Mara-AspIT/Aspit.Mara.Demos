@@ -1,28 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿/* Demonstrates the use of asynchronous programming, to keep the UI from being blocked.*/
+
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Aspit.Mara.Demos.AsyncUiWpf
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow: Window
     {
+        bool count;
+        int i;
+
         public MainWindow()
         {
             InitializeComponent();
+            count = false;
+            i = 0;
+        }
+
+        async void button_Click(object sender, RoutedEventArgs e)
+        {
+            if(count = !count)
+            {
+                button.Content = "Stop";
+                await Task.Run(() => Count());
+            }
+            else
+            {
+                button.Content = "Start";
+            }
+        }
+
+        async Task Count()
+        {
+            while(count)
+            {
+                Dispatcher.Invoke(() => labelClock.Content = $"{i++}");
+                await Task.Delay(1000);
+            }
         }
     }
 }
